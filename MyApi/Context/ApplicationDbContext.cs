@@ -10,4 +10,13 @@ namespace MyApi.Context
         }
         public DbSet<Hero> Heroes {get; set; }
     }
+
+        public class ApplicationDbContext2: DbContext
+    {
+         public ApplicationDbContext2(DbContextOptions<ApplicationDbContext> options): base(options)
+        {
+
+        }
+        public DbSet<Movie> Movies {get; set; }
+    }
 }
